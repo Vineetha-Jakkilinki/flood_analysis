@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flood Prediction Input</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="predict-page">
+
+    <div class="form-container">
+        <h1>Enter Details for Prediction</h1>
+        <form action="/predict_flood" method="post" class="prediction-form">
+            <div class="form-column">
+                <label>Cloud Cover</label>
+                <input type="text" name="cloud_cover" required>
+
+                <label>Annual Rainfall</label>
+                <input type="text" name="ANNUAL" required>
+
+                <label>Jan-Feb Rainfall</label>
+                <input type="text" name="Jan-Feb" required>
+
+                <label>March-May Rainfall</label>
+                <input type="text" name="Mar-May" required>
+
+                <label>June-September Rainfall</label>
+                <input type="text" name="Jun-Sep" required>
+            </div>
+
+            <div class="form-column">
+                <label>Oct-Dec Rainfall</label>
+                <input type="text" name="Oct-Dec" required>
+
+                <label>Average June Rainfall</label>
+                <input type="text" name="avgjune" required>
+
+                <label>Subsurface Runoff</label>
+                <input type="text" name="sub" required>
+
+                <label>Humidity</label>
+                <input type="text" name="Humidity" required>
+
+                <label>Temperature</label>
+                <input type="text" name="Temp" required>
+            </div>
+
+            <div class="form-button">
+                <input type="submit" value="Predict">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

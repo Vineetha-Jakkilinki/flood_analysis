@@ -1,0 +1,162 @@
+/* ---------------- COMMON ---------------- */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 24px;
+}
+
+/* ---------------- HOME PAGE ---------------- */
+body.home-page {
+    background: url('../images/flood_home.jpg') no-repeat center center fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+}
+
+.container {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 100px auto;
+    max-width: 850px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.intro-text, p {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.button-container {
+    margin-top: 50px;
+}
+
+.predict-button {
+    padding: 20px 60px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #000;
+    border-radius: 12px;
+}
+
+.predict-button:hover {
+    background-color: #444;
+}
+
+/* ---------------- PREDICTION PAGE ---------------- */
+body.predict-page {
+    background: url('../images/flood_home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 950px;
+    margin: 80px auto;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prediction-form {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    width: 240px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 12px 30px;
+    font-size: 22px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* ---------------- RESULT PAGE ---------------- */
+body.result-page {
+    background: url('../images/flood_result.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+
+.result-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 700px;
+    margin: 150px auto;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.result-container h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.result-text {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.back-button {
+    padding: 12px 30px;
+    font-size: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
